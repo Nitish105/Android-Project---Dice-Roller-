@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@drawable/bg"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/scoreText"
+        android:layout_marginEnd="14dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textAlignment="textEnd"
+        android:textSize="24sp"
+        android:layout_alignParentTop="true"
+        android:textColor="@color/white" >
+    </TextView>
+
+    <LinearLayout
+        android:layout_below="@+id/scoreText"
+        android:layout_above="@+id/buttonToss"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:src="@drawable/dice1"
+            android:id="@+id/diceImage"
+            android:tintMode="src_in"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            app:tint="@color/white">
+        </ImageView>
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/buttonToss"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="24dp"
+        android:backgroundTint="@color/white"
+        android:text="TOSS"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="26sp"
+        android:textStyle="bold">
+    </Button>
+
+
+</RelativeLayout>
